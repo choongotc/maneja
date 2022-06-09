@@ -1,0 +1,120 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*background-image: url(bg2.jpg);*/
+  background-color: #fff;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.menu-bar {
+  background: #4d0000;
+  text-align: center;
+}
+
+.menu-bar ul {
+  display: inline-flex;
+  list-style: none;
+  color: #fff;
+}
+
+.menu-bar ul li {
+  width: 120px;
+  margin: 15px;
+  padding: 10px;
+}
+
+.menu-bar ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.active, .menu-bar ul li:hover {
+  background: #660000;
+  border-radius: 10px;
+}
+
+.districts {
+  display: none;
+}
+
+.menu-bar ul li:hover .districts {
+  display: block;
+  position: absolute;
+  background: rgb(80, 0, 0);
+  margin-top: 15px;
+  margin-left: -15px;
+}
+
+.menu-bar ul li:hover .districts ul {
+  display: block;
+  margin: 10px;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .districts ul li {
+  width: 90px;
+  padding: 1px;
+  border-bottom: 1px dotted #fff;
+  background: transparent;
+  border-radius: 0;
+  text-align: left;
+}
+
+.menu-bar ul li:hover .districts ul li:hover {
+  background: #800000;
+  border-radius: 1px;
+}
+
+.schools {
+  list-style: none;
+  margin: 10px;
+  padding: 0;
+  width: 25%;
+}
+
+.schools, .district-menu ul li a:hover {
+  background: rgb(255, 60, 30);
+  border-radius: 3px;
+}
+.district-menu{
+  background: rgb(255, 80, 30);
+  text-align: left;
+  padding-top: 1px;
+}
+
+.schools li a:link,
+.schools li a:visited {
+  background-color: #4d0000;
+  display: block;
+  padding: 0.3em;
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 0 0.4em 0;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  box-shadow: 3px 3px 3px 3px rgba(43, 43, 77, 0.5);
+}
+#container{
+  width: 100%;
+  margin: 0 auto;
+}
+.schools {
+  width: 300px;
+  float: left;
+  margin: 15px;
+  margin-left: 50px;
+}
+.clear{
+  clear:both;
+}
+h1{
+  text-align: center;
+}
